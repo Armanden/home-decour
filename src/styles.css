@@ -1,0 +1,77 @@
+:root {
+  --bg: #f6f8fa;
+  --card: #ffffff;
+  --accent: #1f6feb;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+  margin: 0;
+  padding: 20px;
+  background: var(--bg);
+  color: #111;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 0;
+}
+header p {
+  margin: 6px 0 18px 0;
+  color: #444;
+}
+
+.editor {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 16px;
+  align-items: start;
+}
+
+.controls {
+  grid-column: 1 / span 2;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.canvasWrap {
+  background: var(--card);
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.mainCanvas {
+  max-width: 100%;
+  display: block;
+  cursor: crosshair;
+  border-radius: 4px;
+}
+
+.info {
+  background: var(--card);
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.swatches {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.swatch {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  border: 2px solid rgba(0,0,0,0.08);
+  cursor: pointer;
+}
